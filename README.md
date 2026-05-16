@@ -75,4 +75,11 @@ Use `submission/submission-template.md` to record the final URLs and screenshot 
 
 ## Current Local Status
 
-The website source and deployment automation are complete. Actual AWS deployment must be run with active AWS credentials. During local preparation, the configured AWS session returned `ExpiredToken`, so no live AWS resources were created from this machine.
+The website source, deployment automation, and AWS deployment are complete.
+
+- S3 website endpoint: <http://leolin-udacity-static-website-835207447818-20260516.s3-website-us-west-2.amazonaws.com>
+- CloudFront endpoint: <https://d1i5pbmzhtp53l.cloudfront.net>
+- CloudFormation stack: `udacity-static-website`
+- AWS region: `us-west-2`
+
+Deployment evidence is stored under `submission/`.
