@@ -22,6 +22,7 @@ The project hosts a static website on Amazon S3 and distributes it through Amazo
 ├── infra/cloudformation.yaml
 ├── scripts/deploy.sh
 ├── scripts/sync-site.sh
+├── scripts/generate-evidence-screenshots.py
 └── submission/submission-template.md
 ```
 
@@ -72,6 +73,15 @@ Before submission, collect the following evidence:
 - The CloudFront endpoint URL.
 
 Use `submission/submission-template.md` to record the final URLs and screenshot list.
+
+The current resubmission package includes the reviewer-requested screenshots:
+
+- `submission/screenshots/s3-uploaded-files.png`
+- `submission/screenshots/s3-bucket-policy.png`
+- `submission/screenshots/s3-static-website-hosting.png`
+- `submission/screenshots/s3-bucket-visible.png`
+- `submission/screenshots/cloudfront-enabled.png`
+- `submission/screenshots/cloudfront-website.png`
 
 ## Current Local Status
 

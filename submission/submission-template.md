@@ -7,17 +7,23 @@
 
 ## Required Screenshots
 
-Place screenshots in `submission/screenshots/` before creating the final archive.
+Screenshots are included in `submission/screenshots/`.
 
-1. S3 bucket showing uploaded website files.
-2. S3 static website hosting configuration showing the endpoint.
-3. S3 bucket policy or permissions showing public read access.
-4. CloudFront distribution showing the origin and deployed/enabled status.
-5. Browser loading the site through the CloudFront endpoint.
+1. `s3-uploaded-files.png` shows uploaded website files, including `index.html`, `css/`, `img/`, and `vendor/`.
+2. `s3-bucket-policy.png` shows the public-read bucket policy.
+3. `s3-static-website-hosting.png` shows static website hosting enabled.
+4. `s3-bucket-visible.png` shows the S3 bucket in the bucket list.
+5. `cloudfront-enabled.png` shows the CloudFront distribution deployed and enabled.
+6. `cloudfront-website.png` shows the website loading through the CloudFront endpoint.
 
 ## Submitted Evidence
 
 - `submission/screenshots/cloudfront-website.png` shows the deployed website loaded through CloudFront.
+- `submission/screenshots/s3-uploaded-files.png` shows all required website files uploaded to S3.
+- `submission/screenshots/s3-bucket-policy.png` shows the bucket policy permitting public access.
+- `submission/screenshots/s3-static-website-hosting.png` shows static website hosting configuration.
+- `submission/screenshots/s3-bucket-visible.png` shows the S3 bucket in the AWS bucket list.
+- `submission/screenshots/cloudfront-enabled.png` shows the enabled CloudFront distribution.
 - `submission/evidence/s3-uploaded-files.json` shows objects uploaded to the S3 bucket.
 - `submission/evidence/s3-website-configuration.json` shows static website hosting configuration.
 - `submission/evidence/s3-bucket-policy.json` shows the public read bucket policy.
