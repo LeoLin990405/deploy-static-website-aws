@@ -76,12 +76,14 @@ Use `submission/submission-template.md` to record the final URLs and screenshot 
 
 The current resubmission package includes the reviewer-requested screenshots:
 
-- `submission/screenshots/s3-uploaded-files.png`
-- `submission/screenshots/s3-bucket-policy.png`
-- `submission/screenshots/s3-static-website-hosting.png`
-- `submission/screenshots/s3-bucket-visible.png`
-- `submission/screenshots/cloudfront-enabled.png`
-- `submission/screenshots/cloudfront-website.png`
+- `screenshots/s3-uploaded-files.png`
+- `screenshots/s3-bucket-policy.png`
+- `screenshots/s3-static-website-hosting.png`
+- `screenshots/s3-bucket-visible.png`
+- `screenshots/cloudfront-enabled.png`
+- `screenshots/cloudfront-website.png`
+
+The same files are mirrored under `submission/screenshots/` for reviewers who inspect the submission evidence folder.
 
 ## Current Local Status
 

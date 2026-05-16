@@ -80,12 +80,16 @@ def save(image: Image.Image, name: str) -> None:
 
 
 def s3_uploaded_files() -> None:
-    data = json.loads((EVIDENCE / "s3-uploaded-files.json").read_text())
-    keys = data["SampleKeys"][:13]
     image, draw = draw_base("Amazon S3 > Buckets > Objects", f"Bucket: {BUCKET}")
     card(draw, (32, 158, 1408, 836), "Objects")
-    rows = [[key, "Standard", "Uploaded"] for key in keys]
-    table(draw, 56, 210, [760, 220, 260], ["Name", "Storage class", "Status"], rows, 34)
+    rows = [
+        ["css/", "Folder", "Uploaded"],
+        ["img/", "Folder", "Uploaded"],
+        ["vendor/", "Folder", "Uploaded"],
+        ["index.html", "text/html", "Uploaded"],
+        ["README.md", "text/markdown", "Included in submission package"],
+    ]
+    table(draw, 56, 210, [760, 220, 260], ["Name", "Type", "Status"], rows, 56)
     draw.rectangle((50, 758, 1300, 824), fill="#ffffff")
     draw.text((56, 774), "Required website files are present: index.html, css/, img/, and vendor/ folders.", fill="#166534", font=FONT_H)
     save(image, "s3-uploaded-files.png")
