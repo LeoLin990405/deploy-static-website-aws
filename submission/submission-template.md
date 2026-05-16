@@ -23,6 +23,7 @@ Place screenshots in `submission/screenshots/` before creating the final archive
 - `submission/evidence/s3-bucket-policy.json` shows the public read bucket policy.
 - `submission/evidence/cloudformation-resources.json` shows the S3 bucket, bucket policy, and CloudFront distribution resources.
 - `submission/evidence/cloudformation-outputs.json` records the final S3 and CloudFront endpoints.
+- `submission/evidence/cloudfront-distribution.json` shows the CloudFront distribution domain, origin, and deployed status.
 
 ## Deployment Commands
 
